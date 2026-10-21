@@ -1,0 +1,3 @@
+export function SectionWhat({heading='What is Nook',image=`${import.meta.env.BASE_URL}assets/community.png`}: {heading?: string; image?: string}) {
+ return <section id="about" className="nook-what"><div className="nook-what-copy"><h2>{heading}</h2><p>Nook meets once a month in a different Berlin venue. We read one book together — or try to — then gather in a group of ten to talk about it, share what struck us, and swap tips for reading more and focusing better.</p><p>You don't need to have read the book to join. You don't need to be a reader. You just need to show up.</p></div><img src={image} alt="A small group talking about books around a café table"/></section>;
+}
