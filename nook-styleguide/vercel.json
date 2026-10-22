@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/styleguide",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/styleguide/preview",
+      "destination": "/index.html"
+    }
+  ]
+}

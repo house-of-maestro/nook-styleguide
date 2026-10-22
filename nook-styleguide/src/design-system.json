@@ -1,0 +1,578 @@
+{
+  "collections": [
+    {
+      "id": "VariableCollectionId:1:11",
+      "name": "Primitives",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "1:1"
+        }
+      ],
+      "defaultModeId": "1:1"
+    }
+  ],
+  "variables": [
+    {
+      "id": "VariableID:1:24",
+      "name": "typography/font-family-1",
+      "type": "STRING",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": "Besley"
+      },
+      "cssVariable": "--typography-font-family-1"
+    },
+    {
+      "id": "VariableID:1:25",
+      "name": "typography/font-family-2",
+      "type": "STRING",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": "Mona Sans"
+      },
+      "cssVariable": "--typography-font-family-2"
+    },
+    {
+      "id": "VariableID:1:28",
+      "name": "typography/font-weight-400",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 400
+      },
+      "cssVariable": "--typography-font-weight-400"
+    },
+    {
+      "id": "VariableID:1:29",
+      "name": "typography/font-weight-700",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 700
+      },
+      "cssVariable": "--typography-font-weight-700"
+    },
+    {
+      "id": "VariableID:1:30",
+      "name": "typography/font-size-base",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 18
+      },
+      "cssVariable": "--typography-font-size-base"
+    },
+    {
+      "id": "VariableID:2067:1266",
+      "name": "colors/color-headline",
+      "type": "COLOR",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": {
+          "r": 0.95686274766922,
+          "g": 0.9215686321258545,
+          "b": 0.8509804010391235,
+          "a": 1
+        }
+      },
+      "cssVariable": "--colors-color-headline"
+    },
+    {
+      "id": "VariableID:2067:1267",
+      "name": "colors/color-body",
+      "type": "COLOR",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": {
+          "r": 0.95686274766922,
+          "g": 0.9215686321258545,
+          "b": 0.8509804010391235,
+          "a": 1
+        }
+      },
+      "cssVariable": "--colors-color-body"
+    },
+    {
+      "id": "VariableID:2067:1268",
+      "name": "colors/color-highlight",
+      "type": "COLOR",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": {
+          "r": 0.36553508043289185,
+          "g": 0.6096379160881042,
+          "b": 0.1911758929491043,
+          "a": 1
+        }
+      },
+      "cssVariable": "--colors-color-highlight"
+    },
+    {
+      "id": "VariableID:2067:1292",
+      "name": "spacing/space-6",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 40
+      },
+      "cssVariable": "--spacing-space-6"
+    },
+    {
+      "id": "VariableID:2067:1293",
+      "name": "spacing/space-5",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 32
+      },
+      "cssVariable": "--spacing-space-5"
+    },
+    {
+      "id": "VariableID:2067:1294",
+      "name": "spacing/space-10",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 72
+      },
+      "cssVariable": "--spacing-space-10"
+    },
+    {
+      "id": "VariableID:2067:1295",
+      "name": "spacing/space-9",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 64
+      },
+      "cssVariable": "--spacing-space-9"
+    },
+    {
+      "id": "VariableID:2067:1296",
+      "name": "spacing/space-4",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 24
+      },
+      "cssVariable": "--spacing-space-4"
+    },
+    {
+      "id": "VariableID:2067:1297",
+      "name": "spacing/space-8",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 56
+      },
+      "cssVariable": "--spacing-space-8"
+    },
+    {
+      "id": "VariableID:2067:1298",
+      "name": "spacing/space-3",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 16
+      },
+      "cssVariable": "--spacing-space-3"
+    },
+    {
+      "id": "VariableID:2067:1299",
+      "name": "spacing/space-11",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 80
+      },
+      "cssVariable": "--spacing-space-11"
+    },
+    {
+      "id": "VariableID:2067:1300",
+      "name": "spacing/space-2",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 8
+      },
+      "cssVariable": "--spacing-space-2"
+    },
+    {
+      "id": "VariableID:2067:1301",
+      "name": "spacing/space-7",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 48
+      },
+      "cssVariable": "--spacing-space-7"
+    },
+    {
+      "id": "VariableID:2067:1302",
+      "name": "spacing/space-1",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 4
+      },
+      "cssVariable": "--spacing-space-1"
+    },
+    {
+      "id": "VariableID:2067:1306",
+      "name": "radius/radius",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 20
+      },
+      "cssVariable": "--radius-radius"
+    },
+    {
+      "id": "VariableID:2067:1308",
+      "name": "colors/color-surface",
+      "type": "COLOR",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": {
+          "r": 0.0941176488995552,
+          "g": 0.16078431904315948,
+          "b": 0.125490203499794,
+          "a": 1
+        }
+      },
+      "cssVariable": "--colors-color-surface"
+    },
+    {
+      "id": "VariableID:2100:258",
+      "name": "colors/color-brand",
+      "type": "COLOR",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": {
+          "r": 0.0941176488995552,
+          "g": 0.16078431904315948,
+          "b": 0.125490203499794,
+          "a": 1
+        }
+      },
+      "cssVariable": "--colors-color-brand"
+    },
+    {
+      "id": "VariableID:2103:258",
+      "name": "spacing/space-12",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 88
+      },
+      "cssVariable": "--spacing-space-12"
+    },
+    {
+      "id": "VariableID:8013:2260",
+      "name": "colors/color-brand-dark",
+      "type": "COLOR",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": {
+          "r": 0.07450980693101883,
+          "g": 0.11372549086809158,
+          "b": 0.0941176488995552,
+          "a": 1
+        }
+      },
+      "cssVariable": "--colors-color-brand-dark"
+    },
+    {
+      "id": "VariableID:8013:3772",
+      "name": "layout/section-y",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 160
+      },
+      "cssVariable": "--layout-section-y"
+    },
+    {
+      "id": "VariableID:8013:3773",
+      "name": "layout/section-x",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 156
+      },
+      "cssVariable": "--layout-section-x"
+    },
+    {
+      "id": "VariableID:8052:4564",
+      "name": "spacing/space-13",
+      "type": "FLOAT",
+      "collectionId": "VariableCollectionId:1:11",
+      "values": {
+        "1:1": 96
+      },
+      "cssVariable": "--spacing-space-13"
+    }
+  ],
+  "textStyles": [
+    {
+      "id": "S:1103ff36602c0c644b172c76b7c5574bd30ff275,",
+      "name": "headline-hero",
+      "fontName": {
+        "family": "Besley",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 110,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 112.00000047683716
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "cssClass": "nook-text-headline-hero"
+    },
+    {
+      "id": "S:dadbcc90021619bd8c0069433842a5faa2390384,",
+      "name": "headline-2",
+      "fontName": {
+        "family": "Besley",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 50,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 129.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "cssClass": "nook-text-headline-2"
+    },
+    {
+      "id": "S:6862bd4c2f2dc6bb06269271444e442604bffef0,",
+      "name": "headline-3",
+      "fontName": {
+        "family": "Besley",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 35,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 129.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "cssClass": "nook-text-headline-3"
+    },
+    {
+      "id": "S:1e17f63b489e62ac7b467bb2a8efd28c6e651c30,",
+      "name": "headline-4",
+      "fontName": {
+        "family": "Besley",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 25,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 129.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "cssClass": "nook-text-headline-4"
+    },
+    {
+      "id": "S:c4dc5462fef97e2f32205cb5fddb699ad696f71c,",
+      "name": "eyebrow",
+      "fontName": {
+        "family": "Mona Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "wdth": 100
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 145.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 20
+      },
+      "cssClass": "nook-text-eyebrow"
+    },
+    {
+      "id": "S:d9808c4b46f7d9f010161a76d429d1632fa538cf,",
+      "name": "body-text",
+      "fontName": {
+        "family": "Mona Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 145.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "cssClass": "nook-text-body-text"
+    },
+    {
+      "id": "S:37a4a2f0b5c8a28f847bea53d6aaa4d5e300ad23,",
+      "name": "body-text_small",
+      "fontName": {
+        "family": "Mona Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 145.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "cssClass": "nook-text-body-text_small"
+    },
+    {
+      "id": "S:ea21baa8ce1f317e5f2bf480d64bd6256bacbbc6,",
+      "name": "body-text_large",
+      "fontName": {
+        "family": "Mona Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 25,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 145.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "cssClass": "nook-text-body-text_large"
+    },
+    {
+      "id": "S:3810d29304a5c1727daa7696086837e58d90a3e1,",
+      "name": "quote",
+      "fontName": {
+        "family": "Besley",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 45,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 145.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "cssClass": "nook-text-quote"
+    }
+  ],
+  "components": [
+    {
+      "id": "8012:1285",
+      "name": "logo",
+      "properties": {}
+    },
+    {
+      "id": "8013:2256",
+      "name": "input-text",
+      "properties": {}
+    },
+    {
+      "id": "8016:3779",
+      "name": "section-quote",
+      "properties": {}
+    },
+    {
+      "id": "8016:3790",
+      "name": "navigation",
+      "properties": {}
+    },
+    {
+      "id": "8016:3824",
+      "name": "section-month-book",
+      "properties": {}
+    },
+    {
+      "id": "8016:3834",
+      "name": "section-what",
+      "properties": {}
+    },
+    {
+      "id": "8016:3858",
+      "name": "section-how",
+      "properties": {}
+    },
+    {
+      "id": "8016:3874",
+      "name": "section-newsletter",
+      "properties": {}
+    },
+    {
+      "id": "8016:3886",
+      "name": "section-hero",
+      "properties": {}
+    },
+    {
+      "id": "8017:4286",
+      "name": "footer",
+      "properties": {}
+    },
+    {
+      "id": "8052:4534",
+      "name": "button",
+      "properties": {
+        "type": {
+          "type": "VARIANT",
+          "defaultValue": "primary",
+          "variantOptions": [
+            "primary",
+            "secondary"
+          ]
+        }
+      }
+    }
+  ]
+}
