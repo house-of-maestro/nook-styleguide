@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "vite preview --host 127.0.0.1",
+    "tokens:sync": "node scripts/sync-tokens.mjs",
+    "tokens:fetch": "node scripts/sync-tokens.mjs --api",
+    "tokens:check": "node scripts/sync-tokens.mjs --check",
+    "test:tokens": "node --test scripts/sync-tokens.test.mjs",
+    "prebuild": "npm run tokens:sync"
   },
   "dependencies": {
     "react": "^19.0.0",

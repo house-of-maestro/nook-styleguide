@@ -50,6 +50,10 @@ The default route renders Figma homepage node 8017:4198 using the connected comp
 
 ## Styleguide
 
-Visit `/styleguide` for all 27 local Figma primitives, 9 text styles, and 11 live components. Each component links back to its Figma definition. Search components, edit the typography sample, copy colors, and expand responsive section previews. Component frames use `/styleguide/preview?component=Name`; `vercel.json` supports direct navigation and refresh.
+Visit `/styleguide` for all 27 local Figma primitives, 9 text styles, and 11 live components. Search components, edit typography samples, copy colors, and expand responsive previews.
 
-`src/design-system.json` records the Figma inventory. `src/tokens.css` makes every primitive available as a CSS custom property and defines the text styles. Existing production color tokens remain authoritative; the styleguide displays any difference from the saved Figma colors (including the newer green highlight) without changing the homepage. Unused primitives are available for future implementation, not proof that all are currently used. Read the design again to refresh the snapshot; it is not an automatic Figma sync.
+## Variable sync
+
+See [VARIABLE-SYNC.md](VARIABLE-SYNC.md) for the no-code export/upload workflow and optional Enterprise API action. Figma exports live in `design/figma-variables.json`. Every production build regenerates CSS and the styleguide inventory from that export. The initial export includes the green highlight `#5d9b31`.
+
+Do not hand-edit generated `src/tokens.css`. Future changes are: edit Figma → export variables → upload the JSON to GitHub → review/merge → Vercel publishes. The read-only local exporter is in `figma-exporter/`.
