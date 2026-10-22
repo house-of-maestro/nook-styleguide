@@ -1,0 +1,50 @@
+name: Sync Figma variables (Enterprise API)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: figma-variable-api-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: nook-styleguide
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: nook-styleguide/package-lock.json
+      - run: npm ci
+      - name: Fetch variables from Figma
+        run: npm run tokens:fetch
+        env:
+          FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
+      - run: npm run test:tokens
+      - run: npm run build
+      - name: Propose changed variables
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          if git diff --quiet -- design/figma-variables.json src/tokens.css src/design-system.json; then
+            echo 'Figma variables are already up to date.'
+            exit 0
+          fi
+          branch="figma-variables-${RUN_ID}-${RUN_ATTEMPT}"
+          git switch -c "$branch"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add design/figma-variables.json src/tokens.css src/design-system.json
+          git commit -m 'Sync website variables from Figma'
+          git push origin "$branch"
+          gh pr create --repo "$REPOSITORY" --base main --head "$branch" --title 'Sync website variables from Figma' --body 'Update shared website tokens and the styleguide from Figma. Build and token checks passed. Review the Vercel preview before merging.'

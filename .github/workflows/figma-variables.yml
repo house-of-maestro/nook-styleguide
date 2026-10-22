@@ -1,0 +1,25 @@
+name: Check Figma variables
+on:
+  pull_request:
+    paths: ['nook-styleguide/design/**', 'nook-styleguide/scripts/**', 'nook-styleguide/src/**', 'nook-styleguide/package*.json', '.github/workflows/figma-variables.yml']
+  push:
+    branches: [main]
+    paths: ['nook-styleguide/design/**', 'nook-styleguide/scripts/**', 'nook-styleguide/src/**', 'nook-styleguide/package*.json', '.github/workflows/figma-variables.yml']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: nook-styleguide
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: nook-styleguide/package-lock.json
+      - run: npm ci
+      - run: npm run test:tokens
+      - run: npm run build

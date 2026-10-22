@@ -1,13 +1,13 @@
-/* Figma primitives and shared text styles. Existing site colors remain authoritative. */
+/* Generated from design/figma-variables.json. Edit values in Figma, then export and sync. */
 :root {
-  --typography-font-family-1: var(--nook-heading);
-  --typography-font-family-2: var(--nook-body);
+  --typography-font-family-1: "Besley";
+  --typography-font-family-2: "Mona Sans";
   --typography-font-weight-400: 400;
   --typography-font-weight-700: 700;
   --typography-font-size-base: 18px;
-  --colors-color-headline: var(--nook-cream);
-  --colors-color-body: var(--nook-cream);
-  --colors-color-highlight: var(--nook-highlight);
+  --colors-color-headline: #f4ebd9;
+  --colors-color-body: #f4ebd9;
+  --colors-color-highlight: #5d9b31;
   --spacing-space-6: 40px;
   --spacing-space-5: 32px;
   --spacing-space-10: 72px;
@@ -20,32 +20,71 @@
   --spacing-space-7: 48px;
   --spacing-space-1: 4px;
   --radius-radius: 20px;
-  --colors-color-surface: var(--nook-brand);
-  --colors-color-brand: var(--nook-brand);
+  --colors-color-surface: #182920;
+  --colors-color-brand: #182920;
   --spacing-space-12: 88px;
-  --colors-color-brand-dark: var(--nook-dark);
+  --colors-color-brand-dark: #131d18;
   --layout-section-y: 160px;
   --layout-section-x: 156px;
   --spacing-space-13: 96px;
+  --nook-brand: var(--colors-color-brand);
+  --nook-dark: var(--colors-color-brand-dark);
+  --nook-highlight: var(--colors-color-highlight);
+  --nook-cream: var(--colors-color-body);
+  --nook-heading: var(--typography-font-family-1);
+  --nook-body: var(--typography-font-family-2);
+  --text-headline-hero-size: 110px;
+  --text-headline-hero-weight: 500;
+  --text-headline-hero-line-height: 1.1200000047683716;
+  --text-headline-hero-tracking: 0em;
+  --text-headline-hero-family: var(--nook-heading);
+  --text-headline-2-size: 50px;
+  --text-headline-2-weight: 500;
+  --text-headline-2-line-height: 1.2999999523162842;
+  --text-headline-2-tracking: 0em;
+  --text-headline-2-family: var(--nook-heading);
+  --text-headline-3-size: 35px;
+  --text-headline-3-weight: 500;
+  --text-headline-3-line-height: 1.2999999523162842;
+  --text-headline-3-tracking: 0em;
+  --text-headline-3-family: var(--nook-heading);
+  --text-headline-4-size: 25px;
+  --text-headline-4-weight: 500;
+  --text-headline-4-line-height: 1.2999999523162842;
+  --text-headline-4-tracking: 0em;
+  --text-headline-4-family: var(--nook-heading);
+  --text-eyebrow-size: 16px;
+  --text-eyebrow-weight: 500;
+  --text-eyebrow-line-height: 1.4500000476837158;
+  --text-eyebrow-tracking: 0.2em;
+  --text-eyebrow-family: var(--nook-body);
+  --text-body-text-size: 20px;
+  --text-body-text-weight: 400;
+  --text-body-text-line-height: 1.4500000476837158;
+  --text-body-text-tracking: 0px;
+  --text-body-text-family: var(--nook-body);
+  --text-body-text_small-size: 18px;
+  --text-body-text_small-weight: 400;
+  --text-body-text_small-line-height: 1.4500000476837158;
+  --text-body-text_small-tracking: 0px;
+  --text-body-text_small-family: var(--nook-body);
+  --text-body-text_large-size: 25px;
+  --text-body-text_large-weight: 400;
+  --text-body-text_large-line-height: 1.4500000476837158;
+  --text-body-text_large-tracking: 0px;
+  --text-body-text_large-family: var(--nook-body);
+  --text-quote-size: 45px;
+  --text-quote-weight: 400;
+  --text-quote-line-height: 1.4500000476837158;
+  --text-quote-tracking: 0px;
+  --text-quote-family: var(--nook-heading);
 }
-.nook-text-headline-hero { font-family:var(--nook-heading);font-size:var(--text-headline-hero-size);font-weight:500;line-height:1.12;letter-spacing:0.0em; }
-.nook-text-headline-2 { font-family:var(--nook-heading);font-size:var(--text-headline-2-size);font-weight:500;line-height:1.3;letter-spacing:0.0em; }
-.nook-text-headline-3 { font-family:var(--nook-heading);font-size:var(--text-headline-3-size);font-weight:500;line-height:1.3;letter-spacing:0.0em; }
-.nook-text-headline-4 { font-family:var(--nook-heading);font-size:var(--text-headline-4-size);font-weight:500;line-height:1.3;letter-spacing:0.0em; }
-.nook-text-eyebrow { font-family:var(--nook-body);font-size:var(--text-eyebrow-size);font-weight:500;line-height:1.45;letter-spacing:0.2em; }
-.nook-text-body-text { font-family:var(--nook-body);font-size:var(--text-body-text-size);font-weight:400;line-height:1.45;letter-spacing:0px; }
-.nook-text-body-text_small { font-family:var(--nook-body);font-size:var(--text-body-text_small-size);font-weight:400;line-height:1.45;letter-spacing:0px; }
-.nook-text-body-text_large { font-family:var(--nook-body);font-size:var(--text-body-text_large-size);font-weight:400;line-height:1.45;letter-spacing:0px; }
-.nook-text-quote { font-family:var(--nook-heading);font-size:var(--text-quote-size);font-weight:400;line-height:1.45;letter-spacing:0px; }
-
-:root {
-  --text-headline-hero-size:110px;
-  --text-headline-2-size:50px;
-  --text-headline-3-size:35px;
-  --text-headline-4-size:25px;
-  --text-eyebrow-size:16px;
-  --text-body-text-size:20px;
-  --text-body-text_small-size:18px;
-  --text-body-text_large-size:25px;
-  --text-quote-size:45px;
-}
+.nook-text-headline-hero { font-family:var(--text-headline-hero-family);font-size:var(--text-headline-hero-size);font-weight:var(--text-headline-hero-weight);line-height:var(--text-headline-hero-line-height);letter-spacing:var(--text-headline-hero-tracking); }
+.nook-text-headline-2 { font-family:var(--text-headline-2-family);font-size:var(--text-headline-2-size);font-weight:var(--text-headline-2-weight);line-height:var(--text-headline-2-line-height);letter-spacing:var(--text-headline-2-tracking); }
+.nook-text-headline-3 { font-family:var(--text-headline-3-family);font-size:var(--text-headline-3-size);font-weight:var(--text-headline-3-weight);line-height:var(--text-headline-3-line-height);letter-spacing:var(--text-headline-3-tracking); }
+.nook-text-headline-4 { font-family:var(--text-headline-4-family);font-size:var(--text-headline-4-size);font-weight:var(--text-headline-4-weight);line-height:var(--text-headline-4-line-height);letter-spacing:var(--text-headline-4-tracking); }
+.nook-text-eyebrow { font-family:var(--text-eyebrow-family);font-size:var(--text-eyebrow-size);font-weight:var(--text-eyebrow-weight);line-height:var(--text-eyebrow-line-height);letter-spacing:var(--text-eyebrow-tracking); }
+.nook-text-body-text { font-family:var(--text-body-text-family);font-size:var(--text-body-text-size);font-weight:var(--text-body-text-weight);line-height:var(--text-body-text-line-height);letter-spacing:var(--text-body-text-tracking); }
+.nook-text-body-text_small { font-family:var(--text-body-text_small-family);font-size:var(--text-body-text_small-size);font-weight:var(--text-body-text_small-weight);line-height:var(--text-body-text_small-line-height);letter-spacing:var(--text-body-text_small-tracking); }
+.nook-text-body-text_large { font-family:var(--text-body-text_large-family);font-size:var(--text-body-text_large-size);font-weight:var(--text-body-text_large-weight);line-height:var(--text-body-text_large-line-height);letter-spacing:var(--text-body-text_large-tracking); }
+.nook-text-quote { font-family:var(--text-quote-family);font-size:var(--text-quote-size);font-weight:var(--text-quote-weight);line-height:var(--text-quote-line-height);letter-spacing:var(--text-quote-tracking); }
