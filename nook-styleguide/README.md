@@ -47,3 +47,9 @@ Production build and TypeScript checks pass. Chrome verification covered 1440, 1
 ## Connected homepage
 
 The default route renders Figma homepage node 8017:4198 using the connected components, including the book-exchange photo above the footer. Append `?library` to the preview URL to show the library toolbar and component examples. The Figma Code Connect lookup confirmed the component source paths. The two nested Button mappings have no component name; set their component name to `Button` in Figma.
+
+## Styleguide
+
+Visit `/styleguide` for all 27 local Figma primitives, 9 text styles, and 11 live components. Each component links back to its Figma definition. Search components, edit the typography sample, copy colors, and expand responsive section previews. Component frames use `/styleguide/preview?component=Name`; `vercel.json` supports direct navigation and refresh.
+
+`src/design-system.json` records the Figma inventory. `src/tokens.css` makes every primitive available as a CSS custom property and defines the text styles. Existing production color tokens remain authoritative; the styleguide displays any difference from the saved Figma colors (including the newer green highlight) without changing the homepage. Unused primitives are available for future implementation, not proof that all are currently used. Read the design again to refresh the snapshot; it is not an automatic Figma sync.

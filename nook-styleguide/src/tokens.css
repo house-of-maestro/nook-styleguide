@@ -1,0 +1,51 @@
+/* Figma primitives and shared text styles. Existing site colors remain authoritative. */
+:root {
+  --typography-font-family-1: var(--nook-heading);
+  --typography-font-family-2: var(--nook-body);
+  --typography-font-weight-400: 400;
+  --typography-font-weight-700: 700;
+  --typography-font-size-base: 18px;
+  --colors-color-headline: var(--nook-cream);
+  --colors-color-body: var(--nook-cream);
+  --colors-color-highlight: var(--nook-highlight);
+  --spacing-space-6: 40px;
+  --spacing-space-5: 32px;
+  --spacing-space-10: 72px;
+  --spacing-space-9: 64px;
+  --spacing-space-4: 24px;
+  --spacing-space-8: 56px;
+  --spacing-space-3: 16px;
+  --spacing-space-11: 80px;
+  --spacing-space-2: 8px;
+  --spacing-space-7: 48px;
+  --spacing-space-1: 4px;
+  --radius-radius: 20px;
+  --colors-color-surface: var(--nook-brand);
+  --colors-color-brand: var(--nook-brand);
+  --spacing-space-12: 88px;
+  --colors-color-brand-dark: var(--nook-dark);
+  --layout-section-y: 160px;
+  --layout-section-x: 156px;
+  --spacing-space-13: 96px;
+}
+.nook-text-headline-hero { font-family:var(--nook-heading);font-size:var(--text-headline-hero-size);font-weight:500;line-height:1.12;letter-spacing:0.0em; }
+.nook-text-headline-2 { font-family:var(--nook-heading);font-size:var(--text-headline-2-size);font-weight:500;line-height:1.3;letter-spacing:0.0em; }
+.nook-text-headline-3 { font-family:var(--nook-heading);font-size:var(--text-headline-3-size);font-weight:500;line-height:1.3;letter-spacing:0.0em; }
+.nook-text-headline-4 { font-family:var(--nook-heading);font-size:var(--text-headline-4-size);font-weight:500;line-height:1.3;letter-spacing:0.0em; }
+.nook-text-eyebrow { font-family:var(--nook-body);font-size:var(--text-eyebrow-size);font-weight:500;line-height:1.45;letter-spacing:0.2em; }
+.nook-text-body-text { font-family:var(--nook-body);font-size:var(--text-body-text-size);font-weight:400;line-height:1.45;letter-spacing:0px; }
+.nook-text-body-text_small { font-family:var(--nook-body);font-size:var(--text-body-text_small-size);font-weight:400;line-height:1.45;letter-spacing:0px; }
+.nook-text-body-text_large { font-family:var(--nook-body);font-size:var(--text-body-text_large-size);font-weight:400;line-height:1.45;letter-spacing:0px; }
+.nook-text-quote { font-family:var(--nook-heading);font-size:var(--text-quote-size);font-weight:400;line-height:1.45;letter-spacing:0px; }
+
+:root {
+  --text-headline-hero-size:110px;
+  --text-headline-2-size:50px;
+  --text-headline-3-size:35px;
+  --text-headline-4-size:25px;
+  --text-eyebrow-size:16px;
+  --text-body-text-size:20px;
+  --text-body-text_small-size:18px;
+  --text-body-text_large-size:25px;
+  --text-quote-size:45px;
+}
