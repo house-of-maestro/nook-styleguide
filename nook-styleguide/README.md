@@ -43,3 +43,7 @@ Production build and TypeScript checks pass. Chrome verification covered 1440, 1
 ![Component examples](previews/components.png)
 
 [Full desktop preview](previews/desktop.png)
+
+## Connected homepage
+
+The default route renders Figma homepage node 8017:4198 using the connected components, including the book-exchange photo above the footer. Append `?library` to the preview URL to show the library toolbar and component examples. The Figma Code Connect lookup confirmed the component source paths. The two nested Button mappings have no component name; set their component name to `Button` in Figma.
